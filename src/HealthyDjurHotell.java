@@ -13,7 +13,7 @@ public class HealthyDjurHotell implements Iäta {
     public void eat() {
         List<Djur> namnLista = new LinkedList<>();
 
-       try {
+        try {
             Djur h1 = new Hund("Sixten", -5000);
             Djur h2 = new Hund("Dogge", 10000);
             Djur k1 = new Katt("Venus", 5000);
@@ -26,32 +26,32 @@ public class HealthyDjurHotell implements Iäta {
             namnLista.add(k2);
             namnLista.add(o1);
 
-        while (true) {
-            boolean djurFinns = false;
-            String vem = JOptionPane.showInputDialog(null,"Vem vill du mata?"
-                                                      ,"HealthyDjurHotell",JOptionPane.QUESTION_MESSAGE);
-            if (vem == null) {
-                JOptionPane.showMessageDialog(null,"Du har avslutat programmet."
-                                                    ,"HealthyDjurHotell",JOptionPane.INFORMATION_MESSAGE);
-                break;
-            }
-            else if (vem.isEmpty())
-                JOptionPane.showMessageDialog(null,"Du måste ange ett namn."
-                                                            ,"HealthyDjurHotell",JOptionPane.ERROR_MESSAGE);
-            else {
-                for (Djur djur : namnLista) {
-                    if (vem.equalsIgnoreCase(djur.getNamn())) {
-                        djur.eat();
-                        djurFinns = true;
-                    }
+            while (true) {
+                boolean djurFinns = false;
+                String vem = JOptionPane.showInputDialog(null, "Vem vill du mata?"
+                        , "HealthyDjurHotell", JOptionPane.QUESTION_MESSAGE);
+                if (vem == null) {
+                    JOptionPane.showMessageDialog(null, "Du har avslutat programmet."
+                            , "HealthyDjurHotell", JOptionPane.INFORMATION_MESSAGE);
+                    break;
                 }
-            if (!djurFinns)
-                JOptionPane.showMessageDialog(null, vem + " finns inte på hotellet"
-                                                        ,"HealthyDjurHotell",JOptionPane.QUESTION_MESSAGE);
+                else if (vem.isEmpty())
+                    JOptionPane.showMessageDialog(null, "Du måste ange ett namn."
+                            , "HealthyDjurHotell", JOptionPane.ERROR_MESSAGE);
+                else {
+                    for (Djur djur : namnLista) {
+                        if (vem.equalsIgnoreCase(djur.getNamn())) {
+                            djur.eat();
+                            djurFinns = true;
+                        }
+                    }
+                    if (!djurFinns)
+                        JOptionPane.showMessageDialog(null, vem + " finns inte på hotellet"
+                                , "HealthyDjurHotell", JOptionPane.QUESTION_MESSAGE);
+                }
             }
-        }
-       }catch (IllegalArgumentException e){
-           e.printStackTrace();
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
         }
     }
 

@@ -1,20 +1,23 @@
- public abstract class Djur implements Iäta {
+public abstract class Djur implements Iäta {
     private String namn;
     private double vikt;
 
-    public Djur(String namn , double vikt){
+    public Djur(String namn, double vikt) {
         this.namn = namn;
-        if(vikt<=0)
+        if (vikt <= 0)
             throw new IllegalArgumentException("Djuret måste ha ett positivt värde.");
         this.vikt = vikt;
     }
-    public String getNamn(){
+
+    public String getNamn() {
         return namn;
     }
-    public double getVikt(){
+
+    public double getVikt() {
         return vikt;
     }
-    public void eat(){
+
+    public void eat() {
         System.out.println("Djur äter");
     }
 }

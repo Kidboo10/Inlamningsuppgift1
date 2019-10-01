@@ -1,3 +1,3 @@
 public interface Iäta {
-     void eat();
+    void eat();
 }
