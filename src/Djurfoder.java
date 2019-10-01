@@ -8,7 +8,7 @@ public enum Djurfoder {
     //Inkapslad instansvariabler för att inte kunna ändra portion och fodernamn
     private final int portion;
     private final String foderNamn;
-
+    //Konstruktor för enum
     Djurfoder(int portion, String foderNamn) {
         this.portion = portion;
         this.foderNamn = foderNamn;

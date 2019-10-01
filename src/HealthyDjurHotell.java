@@ -3,12 +3,11 @@ import java.text.DecimalFormat;
 import java.util.LinkedList;
 import java.util.List;
 //Huvudprogram
-public class HealthyDjurHotell implements Iäta {
-    //För att visa två decimaler kallas 'decimal'
+public class HealthyDjurHotell {
+        //För att visa två decimaler kallas 'decimal'
     public static DecimalFormat decimal = new DecimalFormat("#.##");
-
-    @Override
-    public void äta() {
+    //konstruktor för HealthyDjurHotell
+    public HealthyDjurHotell(){
         //Enkel form av databas
         List<Djur> namnLista = new LinkedList<>();
         try {
@@ -17,7 +16,7 @@ public class HealthyDjurHotell implements Iäta {
             Djur k1 = new Katt("Venus", 5000);
             Djur k2 = new Katt("Ove", 3000);
             Djur o1 = new Orm("Hypno", 1000);
-            Djur r1 = new Råtta("Musse",1000);
+            Djur r1 = new Råtta("Musse", 1000);
 
             namnLista.add(h1);
             namnLista.add(h2);
@@ -34,8 +33,7 @@ public class HealthyDjurHotell implements Iäta {
                     JOptionPane.showMessageDialog(null, "Du har avslutat programmet."
                             , "HealthyDjurHotell", JOptionPane.INFORMATION_MESSAGE);
                     break;
-                }
-                else if (vem.isEmpty())
+                } else if (vem.isEmpty())
                     JOptionPane.showMessageDialog(null, "Du måste ange ett namn."
                             , "HealthyDjurHotell", JOptionPane.ERROR_MESSAGE);
                 else {
@@ -51,11 +49,10 @@ public class HealthyDjurHotell implements Iäta {
                                 , "HealthyDjurHotell", JOptionPane.QUESTION_MESSAGE);
                 }
             }
-        } catch (IllegalArgumentException e) {
-            e.printStackTrace();
+        }catch(IllegalArgumentException e){
+        e.printStackTrace();
         }
     }
-
 }
 
 

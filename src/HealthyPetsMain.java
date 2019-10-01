@@ -1,11 +1,6 @@
 public class HealthyPetsMain {
-    public static void main(String[] args) throws ClassNotFoundException {
+
+    public static void main(String[] args) {
       HealthyDjurHotell hotell = new HealthyDjurHotell();
-      hotell.äta();
-
-
-
-
-
     }
 }
