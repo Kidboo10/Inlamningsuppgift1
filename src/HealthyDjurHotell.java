@@ -14,17 +14,19 @@ public class HealthyDjurHotell implements Iäta {
         List<Djur> namnLista = new LinkedList<>();
 
         try {
-            Djur h1 = new Hund("Sixten", -5000);
+            Djur h1 = new Hund("Sixten", 5000);
             Djur h2 = new Hund("Dogge", 10000);
             Djur k1 = new Katt("Venus", 5000);
             Djur k2 = new Katt("Ove", 3000);
             Djur o1 = new Orm("Hypno", 1000);
+            Djur r1 = new Råtta("Musse",1000);
 
             namnLista.add(h1);
             namnLista.add(h2);
             namnLista.add(k1);
             namnLista.add(k2);
             namnLista.add(o1);
+            namnLista.add(r1);
 
             while (true) {
                 boolean djurFinns = false;

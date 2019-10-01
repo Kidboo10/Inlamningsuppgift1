@@ -1,5 +1,9 @@
 public enum Djurfoder {
-    KATT(150, "Djurfoder"), HUND(100, "Djurfoder"), ORM(20, "Ormpellet");
+    KATT(150, "Djurfoder"),
+    HUND(100, "Djurfoder"),
+    ORM(20, "Ormpellet"),
+    RÅTTA(400,"Djurfoder");
+
     private int portion;
     private String foderTyp;
 
