@@ -6,7 +6,7 @@ public class Orm extends Djur {
         super(namn, vikt);
     }
 
-    @Override
+    @Override //override metoden som implementeras av superklassen med interface Iäta
     public void äta() {
         JOptionPane.showMessageDialog(null, getNamn() + " äter "
                         + Djurfoder.ORM.getPortion() + "gram " + Djurfoder.ORM.getFoderNamn()

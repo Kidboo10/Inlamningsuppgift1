@@ -1,4 +1,5 @@
 //abstrakt klass för att inte kunna skapa ett objekt av klassen djur
+//Impementerar Iäta för att subklasserna tvingas att implementerar Iäta metoden
 public abstract class Djur implements Iäta {
     private String namn;
     private double vikt;

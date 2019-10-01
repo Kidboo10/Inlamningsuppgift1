@@ -7,7 +7,7 @@ public class Katt extends Djur {
 
     }
 
-    @Override
+    @Override //override metoden som implementeras av superklassen med interface Iäta
     public void äta() {
         JOptionPane.showMessageDialog(null, getNamn() + " äter "
                 + HealthyDjurHotell.decimal.format(getVikt() / Djurfoder.KATT.getPortion())
