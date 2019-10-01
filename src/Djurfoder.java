@@ -1,22 +1,24 @@
 public enum Djurfoder {
+    //Enum med förbestämda portionsstorlekar och namnet på fodret
     KATT(150, "Djurfoder"),
     HUND(100, "Djurfoder"),
     ORM(20, "Ormpellet"),
-    RÅTTA(400,"Djurfoder");
+    RÅTTA(400,"Djurfoder"); //skapat ytterligare en klass för att se implementeringstiden
 
-    private int portion;
-    private String foderTyp;
+    //Inkapslad instansvariabler för att inte kunna ändra portion och fodernamn
+    private final int portion;
+    private final String foderNamn;
 
-    Djurfoder(int portion, String foderTyp) {
+    Djurfoder(int portion, String foderNamn) {
         this.portion = portion;
-        this.foderTyp = foderTyp;
+        this.foderNamn = foderNamn;
     }
-
+    //Getters
     public int getPortion() {
         return portion;
     }
 
-    public String getFoderTyp() {
-        return foderTyp;
+    public String getFoderNamn() {
+        return foderNamn;
     }
 }

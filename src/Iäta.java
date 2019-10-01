@@ -1,3 +1,4 @@
+//Interface med en metod
 public interface Iäta {
-    void eat();
+    void äta(); //Visar mängden mat
 }

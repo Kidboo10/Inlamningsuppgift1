@@ -7,9 +7,9 @@ public class Orm extends Djur {
     }
 
     @Override
-    public void eat() {
+    public void äta() {
         JOptionPane.showMessageDialog(null, getNamn() + " äter "
-                        + Djurfoder.ORM.getPortion() + "gram " + Djurfoder.ORM.getFoderTyp()
+                        + Djurfoder.ORM.getPortion() + "gram " + Djurfoder.ORM.getFoderNamn()
                 , "HealthyDjurHotell", JOptionPane.INFORMATION_MESSAGE);
     }
 

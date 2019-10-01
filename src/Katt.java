@@ -8,10 +8,10 @@ public class Katt extends Djur {
     }
 
     @Override
-    public void eat() {
+    public void äta() {
         JOptionPane.showMessageDialog(null, getNamn() + " äter "
                 + HealthyDjurHotell.decimal.format(getVikt() / Djurfoder.KATT.getPortion())
-                + "gram " + Djurfoder.KATT.getFoderTyp(), "HealthyDjurHotell", JOptionPane.INFORMATION_MESSAGE);
+                + "gram " + Djurfoder.KATT.getFoderNamn(), "HealthyDjurHotell", JOptionPane.INFORMATION_MESSAGE);
     }
 
     @Override

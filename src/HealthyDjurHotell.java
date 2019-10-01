@@ -2,17 +2,15 @@ import javax.swing.*;
 import java.text.DecimalFormat;
 import java.util.LinkedList;
 import java.util.List;
-
+//Huvudprogram
 public class HealthyDjurHotell implements Iäta {
+    //För att visa två decimaler kallas 'decimal'
     public static DecimalFormat decimal = new DecimalFormat("#.##");
 
-    public HealthyDjurHotell() {
-    }
-
     @Override
-    public void eat() {
+    public void äta() {
+        //Enkel form av databas
         List<Djur> namnLista = new LinkedList<>();
-
         try {
             Djur h1 = new Hund("Sixten", 5000);
             Djur h2 = new Hund("Dogge", 10000);
@@ -28,7 +26,7 @@ public class HealthyDjurHotell implements Iäta {
             namnLista.add(o1);
             namnLista.add(r1);
 
-            while (true) {
+            while (true) { // Start för programmet
                 boolean djurFinns = false;
                 String vem = JOptionPane.showInputDialog(null, "Vem vill du mata?"
                         , "HealthyDjurHotell", JOptionPane.QUESTION_MESSAGE);
@@ -41,9 +39,10 @@ public class HealthyDjurHotell implements Iäta {
                     JOptionPane.showMessageDialog(null, "Du måste ange ett namn."
                             , "HealthyDjurHotell", JOptionPane.ERROR_MESSAGE);
                 else {
+                    //Polymorfism
                     for (Djur djur : namnLista) {
                         if (vem.equalsIgnoreCase(djur.getNamn())) {
-                            djur.eat();
+                            djur.äta();
                             djurFinns = true;
                         }
                     }

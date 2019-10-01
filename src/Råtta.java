@@ -5,9 +5,9 @@ public class Råtta extends Djur {
         super(namn, vikt);
     }
     @Override
-    public void eat() {
+    public void äta() {
         JOptionPane.showMessageDialog(null, getNamn() + " äter "
                 + HealthyDjurHotell.decimal.format(getVikt() / Djurfoder.RÅTTA.getPortion())
-                + "gram " + Djurfoder.RÅTTA.getFoderTyp(), "HealthyDjurHotell", JOptionPane.INFORMATION_MESSAGE);
+                + "gram " + Djurfoder.RÅTTA.getFoderNamn(), "HealthyDjurHotell", JOptionPane.INFORMATION_MESSAGE);
     }
 }

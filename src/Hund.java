@@ -6,9 +6,9 @@ public class Hund extends Djur {
         super(namn, vikt);
     }
 
-    public void eat() {
+    public void äta() {
         JOptionPane.showMessageDialog(null, getNamn() + " äter "
-                        + getVikt() / Djurfoder.HUND.getPortion() + " gram " + Djurfoder.HUND.getFoderTyp()
+                        + (int)getVikt() / Djurfoder.HUND.getPortion() + " gram " + Djurfoder.HUND.getFoderNamn()
                 , "HealthyDjurHotell", JOptionPane.INFORMATION_MESSAGE);
     }
 
