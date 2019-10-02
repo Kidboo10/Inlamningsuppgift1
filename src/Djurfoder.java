@@ -3,7 +3,7 @@ public enum Djurfoder {
     KATT(150, "Djurfoder"),
     HUND(100, "Djurfoder"),
     ORM(20, "Ormpellet"),
-    RÅTTA(400,"Djurfoder"); //skapat ytterligare en klass för att se implementeringstiden
+    RÅTTA(200,"Djurfoder"); //skapat ytterligare en klass för att se implementeringstiden
 
     //Inkapslad instansvariabler för att inte kunna ändra portion och fodernamn
     private final int portion;
