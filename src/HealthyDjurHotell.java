@@ -27,7 +27,7 @@ public class HealthyDjurHotell {
 
             while (true) { // Start för programmet
                 boolean djurFinns = false;
-                String vem = JOptionPane.showInputDialog(null, "Vem vill du mata?"
+                String vem = JOptionPane.showInputDialog(null, "Vilket djur ska få mat?"
                         , "HealthyDjurHotell", JOptionPane.QUESTION_MESSAGE);
                 if (vem == null) {
                     JOptionPane.showMessageDialog(null, "Du har avslutat programmet."
