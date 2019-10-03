@@ -4,14 +4,17 @@ public abstract class Djur implements Iäta {
     private String namn;
     private double vikt;
 
+
     //Superkonstruktor som tar in två parametrar
     public Djur(String namn, double vikt) {
         this.namn = namn;
-        if (vikt <= 0) // Kontroll att vikten inte är noll eller negativ
+        if (vikt <= 0) { // Kontroll att vikten inte är noll eller negativ
             throw new IllegalArgumentException("Djuret måste ha ett positivt värde.");
+
+        }
         this.vikt = vikt;
     }
-
+        //Polymorfism
     public String getNamn() {
         return namn;
     }
