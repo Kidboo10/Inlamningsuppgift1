@@ -5,7 +5,7 @@ public class Råtta extends Djur {
         super(namn, vikt);
     }
 
-    @Override //override metoden som implementeras av superklassen med interface Iäta
+    @Override //override metoden (Polymorfism) som implementeras av superklassen med interface Iäta
     public void äta() {
         JOptionPane.showMessageDialog(null, getNamn() + " äter "
                 + HealthyDjurHotell.decimal.format(getVikt() / Djurfoder.RÅTTA.getPortion())
