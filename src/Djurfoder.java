@@ -1,7 +1,7 @@
 public enum Djurfoder {
     //Enum med förbestämda portionsstorlekar och namnet på fodret
-    KATT(150, "Djurfoder"),
-    HUND(100, "Djurfoder"),
+    KATT(150, "Kattfoder"),
+    HUND(100, "Hundfoder"),
     ORM(20, "Ormpellet"),
     RÅTTA(200,"Djurfoder"); //skapat ytterligare en klass för att se implementeringstiden
 
